@@ -18,10 +18,10 @@
 				"string",
 				"string.regexp",
 				"constant.other.symbol",
-                "constant.character.escape"
+        "constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#1c9611"
+				"foreground": "#1bad0e"
 			}
 		},
 		{
