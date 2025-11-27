@@ -1,6 +1,9 @@
 {
   "id": "2477498-94fa872",
   "light": {
+    "background": "#fafafa",
+    "text": "#202020",
+    "accent_grey": "#999999",
     "red": "#d01c11",
     "green": "#1bad0e",
     "blue": "#115bda",
@@ -9,11 +12,14 @@
     "highlight": "#ffeb12b3"
   },
   "dark": {
+    "background": "#0d0d0d",
+    "text": "#c7c7c7",
+    "accent_grey": "#9a9a9a",
     "red": "#f45858",
     "green": "#5ff042",
     "blue": "#40c3ff",
     "magenta": "#ff42fc",
     "yellow": "#fffc42",
-    "highlight": "#fffc42cc"
+    "highlight": "#fffc4244"
   }
 }

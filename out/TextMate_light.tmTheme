@@ -1,0 +1,140 @@
+// Generated from palette 2477498-94fa872 at 2025-11-27T04:47:00.154723+00:00
+// See https://github.com/alexwlchan/colour-scheme
+{	settings = (
+		{	settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+				caret = '#202020';
+				invisibles = '#999999';
+				selection = '#ffeb12b3';
+				lineHighlight = '#ffeb12b3';
+			};
+		},
+		{	name = 'Text base';
+			scope = 'text';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'Source base';
+			scope = 'source - source source';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'Text base';
+			scope = 'text';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'Source base';
+			scope = 'source - source source';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'Embedded source (text)';
+			scope = 'text meta.embedded';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'Embedded source (source)';
+			scope = 'source meta.embedded';
+			settings = {
+				foreground = '#202020';
+				background = '#fafafa';
+			};
+		},
+		{	name = 'comment';
+			scope = 'comment';
+			settings = {
+				foreground = '#d01c11';
+			};
+		},
+		{	name = 'source comment.block';
+			scope = 'source comment.block';
+			settings = {
+				foreground = '#d01c11';
+			};
+		},
+		{	name = 'constant';
+			scope = 'constant';
+			settings = {
+				foreground = '#c311d0';
+			};
+		},
+		{	name = 'entity.name.function';
+			scope = 'entity.name.function';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'variable';
+			scope = 'variable';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'meta.class.ruby';
+			scope = 'meta.class.ruby';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'keyword.control.class.ruby';
+			scope = 'keyword.control.class.ruby';
+			settings = {
+				foreground = '#202020';
+			};
+		},
+		{	name = 'meta.identifier.python';
+			scope = 'meta.identifier.python';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'markup.heading.2.markdown';
+			scope = 'markup.heading.2.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'string';
+			scope = 'string';
+			settings = {
+				foreground = '#1bad0e';
+			};
+		},
+		{	name = 'string constant.character.escape';
+			scope = 'string constant.character.escape';
+			settings = {
+				foreground = '#1bad0e';
+			};
+		},
+		{	name = 'string.interpolated';
+			scope = 'string.interpolated';
+			settings = {
+				foreground = '#1bad0e';
+			};
+		},
+		{	name = 'string.literal';
+			scope = 'string.literal';
+			settings = {
+				foreground = '#1bad0e';
+			};
+		},
+		{	name = 'string.interpolated constant.character.escape';
+			scope = 'string.interpolated constant.character.escape';
+			settings = {
+				foreground = '#1bad0e';
+			};
+		},
+	);
+}

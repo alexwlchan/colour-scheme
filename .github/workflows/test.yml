@@ -38,7 +38,7 @@ jobs:
         ruff format --check .
 
     - name: Check types
-      run: mypy scripts/*.py --strict
+      run: mypy . --strict
 
     - name: Run tests
-      run: pytest scripts
+      run: pytest

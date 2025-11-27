@@ -12,6 +12,8 @@ from vendor_css_files import get_colour_variable
         ("--red:   #ff0000;", "red", "#ff0000"),
         # Alpha channel
         ("--red: #ff0000ff;", "red", "#ff0000ff"),
+        # Three-digit hex in source
+        ("--grey: #999;", "grey", "#999999"),
     ],
 )
 def test_get_colour_variable(css: str, name: str, colour: str) -> None:
