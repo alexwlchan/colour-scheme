@@ -16,4 +16,14 @@
 
 ## TextMate
 
-Copy the generated theme files into the Bundle Editor.
+1.  Select the **Bundles** menu bar item, then select **Edit Bundles…**.
+
+2.  Select the **Themes** bundle, then the **Themes** sub-item.
+
+3.  Right-click on one of the theme files, and select **Show in Finder**.
+
+4.  Open the `.tmTheme` file in TextEdit, and replace the `author`, `name`, and `semanticClass` values.
+
+5.  Return to the TextMate bundle editor, and copy/paste the theme file from `out` into the editor.
+
+6.  Restart TextMate.
