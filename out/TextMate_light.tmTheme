@@ -1,4 +1,4 @@
-// Generated from palette 2477498-94fa872 at 2025-11-27T04:47:00.154723+00:00
+// Generated from palette 2477498-94fa872 at 2025-11-27T09:23:04.140719+00:00
 // See https://github.com/alexwlchan/colour-scheme
 {	settings = (
 		{	settings = {
@@ -100,8 +100,38 @@
 				foreground = '#115bda';
 			};
 		},
+		{	name = 'markup.heading.1.markdown';
+			scope = 'markup.heading.1.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
 		{	name = 'markup.heading.2.markdown';
 			scope = 'markup.heading.2.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'markup.heading.3.markdown';
+			scope = 'markup.heading.3.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'markup.heading.4.markdown';
+			scope = 'markup.heading.4.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'markup.heading.5.markdown';
+			scope = 'markup.heading.5.markdown';
+			settings = {
+				foreground = '#115bda';
+			};
+		},
+		{	name = 'markup.heading.6.markdown';
+			scope = 'markup.heading.6.markdown';
 			settings = {
 				foreground = '#115bda';
 			};
