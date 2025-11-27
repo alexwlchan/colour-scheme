@@ -39,3 +39,6 @@ jobs:
 
     - name: Check types
       run: mypy scripts/*.py --strict
+
+    - name: Run tests
+      run: pytest scripts

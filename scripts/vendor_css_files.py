@@ -5,10 +5,13 @@ create a `palette.json` in the root of the repo.
 """
 
 import glob
+import json
 from pathlib import Path
 import re
 import shutil
 import subprocess
+
+from palette import Colours, Palette
 
 
 def get_alexwlchan_net_css(css_name: str) -> tuple[str, str]:
@@ -34,7 +37,7 @@ def get_alexwlchan_net_css(css_name: str) -> tuple[str, str]:
     # If we don't have a vendored copy of the file in this repo, delete
     # any previously-vendored copies then copy in the new version.
     if not vendor_path.exists():
-        for f in glob.glob("syntax_highlighting.*.scss"):
+        for f in glob.glob(f"css/{css_path.stem}.*"):
             Path(f).unlink()
 
         shutil.copyfile(css_path, vendor_path)
@@ -46,8 +49,17 @@ def get_colour_variable(css: str, *, name: str) -> str:
     """
     Extracts a CSS variable from a snippet of CSS.
     """
-    m = re.search(f"--{name}:" + r"\s+(?P<colour>#[0-9a-f]{6}([0-9a-f]{2})?);", css)
-    assert m is not None
+    # Example matches:
+    #
+    #     --red: #ff0000;
+    #     --red:   #ff0000;
+    #     --red: #ff0000ff;
+    #
+    m = re.search(f"--{name}:" + r"\s*(?P<colour>#[0-9a-f]{6}([0-9a-f]{2})?);", css)
+
+    if m is None:
+        raise ValueError(f"cannot find variable --{name} in CSS")
+
     return m.group("colour")
 
 
@@ -55,10 +67,34 @@ if __name__ == "__main__":
     variable_id, variable_css = get_alexwlchan_net_css("variables.scss")
     syntax_id, syntax_css = get_alexwlchan_net_css("components/syntax_highlighting.css")
 
-    # Get the default primary colour, which is used for my two shades
-    # of red.
-    light_red = get_colour_variable(variable_css, name="default-primary-color-light")
-    dark_red = get_colour_variable(variable_css, name="default-primary-color-dark")
+    light_colours: Colours = {
+        "red": get_colour_variable(variable_css, name="default-primary-color-light"),
+        "green": get_colour_variable(syntax_css, name="green"),
+        "blue": get_colour_variable(syntax_css, name="blue"),
+        "magenta": get_colour_variable(syntax_css, name="magenta"),
+        "yellow": get_colour_variable(syntax_css, name="yellow"),
+        "highlight": get_colour_variable(syntax_css, name="highlight"),
+    }
 
-    print(light_red)
-    print(dark_red)
+    # Get the first block of dark theme colours from the syntax highlighting
+    # CSS. This is a bit crude, but it works for now.
+    _, dark_syntax_css = syntax_css.split("@media (prefers-color-scheme: dark) {")
+    dark_colours: Colours = {
+        "red": get_colour_variable(variable_css, name="default-primary-color-dark"),
+        "green": get_colour_variable(dark_syntax_css, name="green"),
+        "blue": get_colour_variable(dark_syntax_css, name="blue"),
+        "magenta": get_colour_variable(dark_syntax_css, name="magenta"),
+        "yellow": get_colour_variable(dark_syntax_css, name="yellow"),
+        "highlight": get_colour_variable(dark_syntax_css, name="highlight"),
+    }
+
+    palette: Palette = {
+        "id": f"{variable_id}-{syntax_id}",
+        "light": light_colours,
+        "dark": dark_colours,
+    }
+
+    with open("palette.json", "w") as out_file:
+        out_file.write(json.dumps(palette, indent=2))
+
+    print(f"Written palette {palette['id']} to palette.json")

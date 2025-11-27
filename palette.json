@@ -1,0 +1,19 @@
+{
+  "id": "2477498-94fa872",
+  "light": {
+    "red": "#d01c11",
+    "green": "#1bad0e",
+    "blue": "#115bda",
+    "magenta": "#c311d0",
+    "yellow": "#c8a711",
+    "highlight": "#ffeb12b3"
+  },
+  "dark": {
+    "red": "#f45858",
+    "green": "#5ff042",
+    "blue": "#40c3ff",
+    "magenta": "#ff42fc",
+    "yellow": "#fffc42",
+    "highlight": "#fffc42cc"
+  }
+}
