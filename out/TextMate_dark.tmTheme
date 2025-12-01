@@ -1,4 +1,4 @@
-// Generated from palette 2477498-94fa872 at 2025-11-27T09:23:04.142418+00:00
+// Generated from palette 2477498-94fa872 at 2025-12-01T07:52:12.960710+00:00
 // See https://github.com/alexwlchan/colour-scheme
 {	settings = (
 		{	settings = {
@@ -70,8 +70,8 @@
 				foreground = '#ff42fc';
 			};
 		},
-		{	name = 'entity.name.function';
-			scope = 'entity.name.function';
+		{	name = 'entity.name';
+			scope = 'entity.name';
 			settings = {
 				foreground = '#40c3ff';
 			};

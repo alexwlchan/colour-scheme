@@ -93,7 +93,7 @@ def generate_textmate_theme(colours: Colours, palette_id: str) -> str:
         ("comment", colours["comment"]),
         ("source comment.block", colours["comment"]),
         ("constant", colours["literal"]),
-        ("entity.name.function", colours["name"]),
+        ("entity.name", colours["name"]),
         ("variable", colours["name"]),
         ("meta.class.ruby", colours["name"]),
         ("keyword.control.class.ruby", colours["text"]),
