@@ -10,10 +10,11 @@ class BaseColours(TypedDict):
     blue: str
     magenta: str
     yellow: str
+    cyan: str
     highlight: str
 
 
-class Colours(TypedDict):
+class Colours(BaseColours):
     background: str
     text: str
     comment: str
@@ -26,14 +27,13 @@ class Colours(TypedDict):
 
 def enrich_colours(c: BaseColours) -> Colours:
     return {
-        "background": c["background"],
+        **c,
         "text": c["text"],
         "comment": c["red"],
         "literal": c["magenta"],
         "string": c["green"],
         "name": c["blue"],
         "punctuation": c["accent_grey"],
-        "highlight": c["highlight"],
     }
 
 

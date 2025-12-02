@@ -9,7 +9,8 @@
     "blue": "#115bda",
     "magenta": "#c311d0",
     "yellow": "#c8a711",
-    "highlight": "#ffeb12b3"
+    "highlight": "#ffeb12b3",
+    "cyan": "#2dceb7"
   },
   "dark": {
     "background": "#0d0d0d",
@@ -20,6 +21,7 @@
     "blue": "#40c3ff",
     "magenta": "#ff42fc",
     "yellow": "#fffc42",
-    "highlight": "#fffc4244"
+    "highlight": "#fffc4244",
+    "cyan": "#41f1df"
   }
 }
