@@ -4,11 +4,13 @@ iniconfig==2.3.0
     # via pytest
 jinja2==3.1.6
     # via -r requirements.txt
+librt==0.6.3
+    # via mypy
 markupsafe==3.0.3
     # via
     #   -r requirements.txt
     #   jinja2
-mypy==1.18.2
+mypy==1.19.0
     # via -r dev_requirements.in
 mypy-extensions==1.1.0
     # via mypy
