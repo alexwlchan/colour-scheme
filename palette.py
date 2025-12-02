@@ -15,14 +15,11 @@ class BaseColours(TypedDict):
 
 
 class Colours(BaseColours):
-    background: str
-    text: str
     comment: str
     literal: str
     string: str
     name: str
     punctuation: str
-    highlight: str
 
 
 def enrich_colours(c: BaseColours) -> Colours:

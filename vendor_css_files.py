@@ -89,6 +89,7 @@ if __name__ == "__main__":
         "magenta": get_colour_variable(syntax_css, name="--magenta"),
         "yellow": get_colour_variable(syntax_css, name="--yellow"),
         "highlight": get_colour_variable(syntax_css, name="--highlight"),
+        "cyan": "#2dceb7",
     }
 
     # Get the first block of dark theme colours from the syntax highlighting
@@ -104,6 +105,7 @@ if __name__ == "__main__":
         "magenta": get_colour_variable(dark_syntax_css, name="--magenta"),
         "yellow": get_colour_variable(dark_syntax_css, name="--yellow"),
         "highlight": get_colour_variable(dark_syntax_css, name="--highlight"),
+        "cyan": "#41f1df",
     }
 
     # When I do <mark> highlights on my blog, I keep the text black in

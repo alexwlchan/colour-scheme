@@ -131,7 +131,7 @@ iTermColour = TypedDict(
     "iTermColour",
     {
         "Red Component": float,
-        "Gren Component": float,
+        "Green Component": float,
         "Blue Component": float,
         "Alpha Component": float,
         "Color Space": str,
@@ -139,7 +139,7 @@ iTermColour = TypedDict(
 )
 
 
-def to_iterm2_colour(hex_string) -> iTermColour:
+def to_iterm2_colour(hex_string: str) -> iTermColour:
     r_255 = int(hex_string[1:3], 16)
     g_255 = int(hex_string[3:5], 16)
     b_255 = int(hex_string[5:7], 16)
