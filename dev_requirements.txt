@@ -22,7 +22,7 @@ pygments==2.19.2
     # via pytest
 pytest==9.0.1
     # via -r dev_requirements.in
-ruff==0.14.6
+ruff==0.14.8
     # via -r dev_requirements.in
 typing-extensions==4.15.0
     # via mypy
