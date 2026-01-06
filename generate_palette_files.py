@@ -180,6 +180,9 @@ def generate_iterm2_theme(palette: Palette) -> bytes:
         "Ansi 6 Color (Light)": to_iterm2_colour(palette["light"]["cyan"]),
         "Ansi 7 Color (Dark)": to_iterm2_colour(palette["dark"]["background"]),
         "Ansi 7 Color (Light)": to_iterm2_colour(palette["light"]["background"]),
+        "Cursor Color (Light)": to_iterm2_colour(palette["light"]["text"]),
+        "Cursor Text Color (Light)": to_iterm2_colour(palette["light"]["highlight"]),
+        "Selection Color (Light)": to_iterm2_colour(palette["light"]["highlight"]),
         "Ansi 10 Color": {
             "Alpha Component": 1.0,
             "Blue Component": 0.45524293184280396,
@@ -385,12 +388,6 @@ def generate_iterm2_theme(palette: Palette) -> bytes:
             "Green Component": 0.5803921568627451,
             "Red Component": 0.5137254901960784,
         },
-        "Cursor Color (Light)": {
-            "Blue Component": 0.5137254901960784,
-            "Color Space": "sRGB",
-            "Green Component": 0.4823529411764706,
-            "Red Component": 0.396078431372549,
-        },
         "Cursor Guide Color": {
             "Alpha Component": 0.25,
             "Blue Component": 0.9907825589179993,
@@ -424,12 +421,6 @@ def generate_iterm2_theme(palette: Palette) -> bytes:
             "Color Space": "sRGB",
             "Green Component": 0.21176470588235294,
             "Red Component": 0.027450980392156862,
-        },
-        "Cursor Text Color (Light)": {
-            "Blue Component": 0.8352941176470589,
-            "Color Space": "sRGB",
-            "Green Component": 0.9098039215686274,
-            "Red Component": 0.9333333333333333,
         },
         "Match Background Color": {
             "Alpha Component": 1.0,
@@ -483,12 +474,6 @@ def generate_iterm2_theme(palette: Palette) -> bytes:
             "Color Space": "sRGB",
             "Green Component": 0.21176470588235294,
             "Red Component": 0.027450980392156862,
-        },
-        "Selection Color (Light)": {
-            "Blue Component": 0.8352941176470589,
-            "Color Space": "sRGB",
-            "Green Component": 0.9098039215686274,
-            "Red Component": 0.9333333333333333,
         },
     }
 
